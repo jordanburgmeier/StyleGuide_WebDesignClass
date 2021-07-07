@@ -1,0 +1,364 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px;
+}
+/* Labels for fonts and colors and icons */
+#label{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  margin-bottom: -15px;
+  font-style: italic;
+  font-weight: 300;
+  font-size:1vw;
+}
+/* Style Sheet H1 */
+section.form h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9.5vw;
+  color: #BEBEBE;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+/* Colors/Typeography/Icons Heading */
+section#colors>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 2.75vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+section#type>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 2.75vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+section#icons>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 2.75vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+/* Pri/Sec/Tert/Status Headings */
+div.palette>h3{
+  font-size: 1vw;
+  font-weight: 300;
+  font-style: italic;
+  color: #BEBEBE;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+/* Top palettes */
+div.group1{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+div#pri{
+  flex-direction: column;
+  width: 20vw;
+  padding: 0px 10px;
+  padding-right: 50px;
+}
+div#sec{
+  flex-direction: column;
+  width: 25vw;
+  padding: 0px 10px;
+  margin-right: -35px;
+}
+div#tert{
+  flex-direction: column;
+  width: 30vw;
+  padding: 0px 10px;
+}
+div#status{
+  flex-direction: column;
+  width: 50vw;
+  padding: 0px 10px;
+}
+/* Swats seperated out by sections */
+div.priswat{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 0px;
+}
+div.secswat{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+div.backswat{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div.statswat{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* color squares */
+div.swatch{
+  width: 10vw;
+  height: 10vw;
+}
+
+/*Swatches w/ BG colors */
+div#p1{
+  background-color: #597471;
+}
+div#p2{
+  background-color: #99C0BC;
+}
+
+div#s1{
+  background-color: #937782;
+}
+div#s2{
+  background-color: #EB9385;
+}
+div#b1{
+  background-color: #E6E6E6;
+}
+div#b2{
+  background-color: #7B7B7B;
+}
+div#b3{
+  background-color: #000000;
+}
+div#st1{
+  background-color: #F4E596;
+}
+div#st2{
+  background-color: #8BA779;
+}
+div#st3{
+  background-color: #A6C8DB;
+}
+div#st4{
+  background-color: #C34D4C;
+}
+div#st5{
+  background-color: #CE8832;
+}
+
+div#raleway{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+
+}
+/*Bb font Raleway*/
+p#example1{
+  color: #7B7B7B;
+  font-size: 18vw;
+  margin-top: -30px;
+  margin-bottom: -50px;
+  font-weight: 600;
+}
+/*Headers font Raleway then h1,2&3*/
+div#headers1{
+  width: 30vw;
+  font-weight: bold;
+}
+div#headersEx1>h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 4.75vw;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  color: #7B7B7B;
+}
+div#headersEx1>h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.75vw;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  color: #7B7B7B;
+}
+div#headersEx1>h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  color: #7B7B7B;
+}
+div#font1{
+  width: 30vw;
+}
+div#bodinbut1{
+  width: 35vw;
+}
+/* body copy example*/
+div#bodyEx1>p{
+  font-size: 1vw;
+
+}
+
+/* inline and button for raleway font*/
+div#iba{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+div#groupinlineR{
+  display: flex;
+  flex-direction: column;
+}
+p#inline1{
+  font-style: SemiBold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #C34D4C;
+  margin-bottom: -10px;
+}
+div#groupbuttonR{
+  display: flex;
+  flex-direction: column;
+
+}
+p#button1{
+  font-style: SemiBold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #A6C8DB;
+  margin-bottom: -10px;
+}
+
+div#merriweather{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding: 10px;
+  font-family: 'Merriweather', serif;
+}
+/*Bb font Merriweather*/
+p#example2{
+  color: #7B7B7B;
+  font-size: 18vw;
+  margin-top: -30px;
+  margin-bottom: -60px;
+  font-weight: 700;
+}
+
+div#headersEx2>h1{
+  font-family: 'Merriweather', serif;
+  font-size: 4.75vw;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  color: #7B7B7B;
+}
+div#headersEx2>h2{
+  font-family: 'Merriweather', serif;
+  font-size: 3.75vw;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  color: #7B7B7B;
+}
+div#headersEx2>h3{
+  font-family: 'Merriweather', serif;
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  color: #7B7B7B;
+}
+
+div#font2{
+  width: 30vw;
+}
+div#headers2{
+  width: 30vw;
+  font-weight: 400;
+}
+div#bodinbut2{
+  width: 35vw;
+}
+div#bodyEx2>p{
+  font-size: 1vw;
+}
+
+div#ibb{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+div#groupinlinrvw{
+  display: flex;
+  flex-direction: column;
+}
+p#inline2{
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  color: #C34D4C;
+  margin-bottom: -10px;
+}
+div#groupbuttonM{
+  display: flex;
+  flex-direction: column;
+}
+p#button2{
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  color: #A6C8DB;
+  margin-bottom: -10px;
+}
+
+div#eyecons{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+div#topicons{
+  flex-direction: row;
+  display: flex;
+}
+div#default{
+  padding: 22px;
+}
+
+img#bicons{
+  width: 43vw;
+}
+div#warning{
+  background-color: #E6E6E6;
+  padding: 22px;
+}
+img#oicons{
+  width: 43vw;
+}
+div#bottomicons{
+  flex-direction: row;
+  display: flex;
+}
+div#success{
+  background-color: #E6E6E6;
+  padding: 22px;
+}
+img#gicons{
+  width: 43vw;
+}
+div#critical{
+  padding: 22px;
+}
+img#ricons{
+  width: 43vw;
+}

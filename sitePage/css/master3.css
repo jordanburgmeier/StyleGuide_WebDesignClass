@@ -1,0 +1,512 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px;
+}
+a{
+  text-decoration: none;
+  /* gets rid of link underline */
+}
+/* Labels for fonts and colors and icons */
+#label{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 300;
+  font-size:1vw;
+}
+
+/* Colors/Typeography/Icons Heading */
+section#nav>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 2.75vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+section#prog>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 2.75vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+/* progress bars/circles */
+div#allProg{
+  display: flex;
+  flex-flow: column;
+}
+div#bars{
+  width: 60vw;
+  height: 40vh;
+}
+img#bar1{
+  width: 100%;
+  margin-top: 5%;
+}
+/* progress bar animation dots */
+
+div#dotsImages{
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 5.6vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+div#circleProg{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+}
+img#cir1{
+  width: 40%;
+  margin-right: 10%;
+}
+img#cir2{
+  width: 40%;
+  margin-left: 10%;
+}
+/* FAKE BROWSER */
+div#grayBar{
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  width: 92vw;
+  height: 8vh;
+  background-color: #E6E6E6;
+}
+div#whiteBar{
+  width: 50vw;
+  height: 5vh;
+  background-color: white;
+  border-radius: 20px;
+}
+div#brows123{
+  display: flex;
+  flex-direction: row;
+}
+div#brows1{
+  background-color: #F37A6F;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+div#brows2{
+  background-color: #F8C760;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 1vw;
+}
+div#brows3{
+  background-color: #67CE65;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 10vw;
+}
+div#browserBottom{
+  width: 92vw;
+  height: 30vh;
+  background-color: #E6E6E6;
+}
+div#browserBottom2{
+  width: 92vw;
+  height: 40vh;
+  background-color: #E6E6E6;
+}
+/* OrgSite NAVAGATION bar*/
+
+div#orgSite{
+  background-color: #7B7B7B;
+  width: 92vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+h2#orgLogo{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #E6E6E6;
+  margin-left: 1.5vw;
+}
+
+select#seleOrg{
+  appearance: none;
+  outline: none;
+  width: 9vw;
+  height: 3vw;
+  margin: 1rem auto;
+  font-size: 1.25rem;
+  font-family: "Raleway";
+  font-weight: 600;
+  border: none;
+  background-color: #7B7B7B;
+  color: #99C0BC;
+}
+
+/* News NAVIGATION bar */
+
+div#newsSite{
+  background-color: #98C0BC;
+  width: 92vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2#newsLogo{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #E6E6E6;
+  margin-left: 1.5vw;
+}
+
+/* Portfolio NAVIGATION bar */
+div#portSite{
+  background-color: #7B7B7B;
+  width: 92vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2#portLogo{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #E6E6E6;
+}
+
+button#arrowPort{
+  appearance: none;
+  outline: none;
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  background-color: #7B7B7B;
+  background-image: url(../imgs/arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1vw;
+}
+div#portList{
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  background-color: #7B7B7B;
+  background-image: url(../imgs/list.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1vw;
+}
+
+
+
+/* Service NAVIGATION bar */
+div#servSite{
+  background-color: #7B7B7B;
+  width: 92vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2#servLogo{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #E6E6E6;
+}
+
+select#seleServ{
+  appearance: none;
+  outline: none;
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  background-color: #7B7B7B;
+  background-image: url(../imgs/qu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1vw;
+}
+div#servList{
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  background-color: #7B7B7B;
+  background-image: url(../imgs/list.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1vw;
+}
+
+
+.dropbtn {
+  background-color: #7B7B7B;
+  color: #98C0BC;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #98C0BC;
+  color: #7B7B7B;
+}
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #98C0BC;
+  width: 30vh;
+  height: 25vh;
+  overflow: auto;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #7B7B7B;
+  font-family: "Raleway";
+  padding: 1rem;
+  font-weight: 600;
+  display: block;
+}
+
+div#linkRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.show {display: block;}
+
+/* News Navigation Dropdowns */
+
+.dropbtn2 {
+  background-color: #98C0BC;
+  color: #7B7B7B;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: #7B7B7B;
+  color: #98C0BC;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  background-color: #7B7B7B;
+  width: 92vw;
+  height: 30vh;
+  overflow: auto;
+  z-index: 1;
+}
+.dropdown-content2 a {
+  color: #98C0BC;
+  font-family: "Raleway";
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.show {display: block;}
+
+div#newsItem{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newsItem div:hover{
+  border: solid #E6E6E6;
+}
+
+div#newsSq{
+  width: 9vw;
+  height: 9vw;
+  background-color:#98C0BC;
+  border-radius: 20px;
+}
+
+div#allNews{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Portfolio Navigation Dropdowns */
+
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  top: 52px;
+  right: 0px;
+  background-color: #7B7B7B;
+  width: 92vw;
+  height: 40vh;
+  overflow: auto;
+  z-index: 1;
+}
+.dropdown-content3 a {
+  color: #E6E6E6;
+  font-family: "Raleway";
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 4rem;
+  margin-left: 4rem;
+  margin-top: -4rem;
+}
+
+.show {display: block;}
+
+div#portItem{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portItem div:hover{
+  border: solid #E6E6E6;
+}
+
+div#portSq{
+  width: 15vw;
+  height: 15vw;
+  background-color:#98C0BC;
+  border-radius: 20px;
+}
+
+div#allPort{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/* Service Navigation Dropdowns */
+
+.dropdown-content4 a:hover {
+  color: #7B7B7B;
+}
+
+.dropdown4 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  top: 52px;
+  right: 0px;
+  background-color: #98C0BC;
+  width: 92vw;
+  height: 40vh;
+  overflow: auto;
+  z-index: 1;
+}
+.dropdown-content4 a {
+  color: #E6E6E6;
+  font-family: "Raleway";
+  padding: 0rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.show {display: block;}
+
+div#portItem{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+div#portSq{
+  width: 15vw;
+  height: 15vw;
+  background-color:#98C0BC;
+  border-radius: 20px;
+}
+
+div#allServ{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+div#servRow{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+/* adding typewriter effect to heading */
+/* NAVIGATION PAGE H1 HEADER */
+.typewriter h1 {
+  color: #BEBEBE;
+  font-weight: 300;
+  font-size: 9.5vw;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #98C0BC; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .0em; /* Adjust as needed */
+  animation:
+    typing 2.5s steps(15, end),
+    blink-caret .9s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #98C0BC }
+}

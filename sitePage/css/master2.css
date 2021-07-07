@@ -1,0 +1,608 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px;
+}
+
+section#btns{
+  width: 100%;
+}
+div#allButtons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+div#buttons1{
+  width: 30%;
+}
+div#buttons2{
+  width: 20%;
+}
+div#buttons3{
+  width: 15%;
+}
+
+/* basics of the button */
+div.theButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .8rem;
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+/* button transition for the hovers */
+div#buttons1>div.theButton p{
+  font-size: 2rem;
+  transition: font-size .25s ease-in-out;
+}
+div#buttons1>div.theButton:hover p{
+  font-size: 2.5rem;
+}
+
+div#buttons2>div.theButton p{
+  font-size: 1.5rem;
+  transition: font-size .25s ease-in-out;
+}
+div#buttons2>div.theButton:hover p{
+  font-size: 2rem;
+}
+
+div#buttons3>div.theButton p{
+  font-size: 1rem;
+  transition: font-size .25s ease-in-out;
+}
+div#buttons3>div.theButton:hover p{
+  font-size: 1.5rem;
+}
+
+/* buttons color for hover  */
+div#large1:hover, div#med1:hover, div#small1:hover{
+  background-color: #597471;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+}
+div#large2:hover, div#med2:hover, div#small2:hover{
+  background-color: #99C0BC;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+}
+div#large3:hover, div#med3:hover, div#small3:hover{
+  background-color: #E6E6E6;
+  border: 3px solid #597471;
+  color:#7B7B7B;
+}
+
+/* buttons normal */
+div#large1{
+  width: 100%;
+  height: 8vw;
+  background-color: #597471;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#large2{
+  width: 100%;
+  height: 8vw;
+  background-color: #99C0BC;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#large3{
+  width: 100%;
+  height: 8vw;
+  background-color: #E6E6E6;
+  border: 3px solid #597471;
+  color: #7B7B7B;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#med1{
+  width: 100%;
+  height: 5.5vw;
+  background-color: #597471;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#med2{
+  width: 100%;
+  height: 5.5vw;
+  background-color: #99C0BC;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#med3{
+  width: 100%;
+  height: 5.5vw;
+  background-color: #E6E6E6;
+  border: 3px solid #597471;
+  color: #7B7B7B;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#small1{
+  width: 100%;
+  height: 4vw;
+  background-color: #597471;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#small2{
+  width: 100%;
+  height: 4vw;
+  background-color: #99C0BC;
+  border: 3px solid #597471;
+  color: #E6E6E6;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+div#small3{
+  width: 100%;
+  height: 4vw;
+  background-color: #E6E6E6;
+  border: 3px solid #597471;
+  color: #7B7B7B;
+  transition:
+    border: .25s ease-in-out;
+    width: .25s ease-in-out;
+}
+
+/* Miscellaneous buttons */
+section#eachMisc{
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
+/* ON AND OFF SWITCH */
+/* each switch has its own ID otherwisethey dont work -- this took forever! */
+.onoffswitch {
+    position: relative; width: 110px;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 50px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 40px; padding: 0; line-height: 40px;
+    font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: " ";
+    padding-left: 12px;
+    background-color: #EB9385; color: #E6E6E6;
+}
+.onoffswitch-inner:after {
+    content: " ";
+    padding-right: 12px;
+    background-color: #6C6C6C; color: #E6E6E6;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 50px; margin: -5px;
+    background: #E6E6E6;
+    position: absolute; top: 0; bottom: 0;
+    right: 66px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #937782;
+    /* CHANGE OF CIRCLE COLOR ON SWITCH */
+}
+
+/* ON AND OFF SWITCH 2 */
+.onoffswitch2 {
+    position: relative; width: 110px;
+}
+.onoffswitch-checkbox2 {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label2 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 50px;
+}
+.onoffswitch-inner2 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner2:before, .onoffswitch-inner2:after {
+    display: block; float: left; width: 50%; height: 40px; padding: 0; line-height: 40px;
+    font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner2:before {
+    content: " ";
+    padding-left: 12px;
+    background-color: #EB9385; color: #E6E6E6;
+}
+.onoffswitch-inner2:after {
+    content: " ";
+    padding-right: 12px;
+    background-color: #6C6C6C; color: #E6E6E6;
+    text-align: right;
+}
+.onoffswitch-switch2 {
+    display: block; width: 50px; margin: -5px;
+    background: #E6E6E6;
+    position: absolute; top: 0; bottom: 0;
+    right: 66px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-inner2 {
+    margin-left: 0;
+}
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
+    right: 0px;
+    background-color: #937782;
+    /* CHANGE OF CIRCLE COLOR ON SWITCH */
+}
+
+/* checkbox */
+
+section#eachMisc2{
+  display: flex;
+  flex-direction: row;
+}
+
+/* checkmark boxes */
+div#checkID{
+  padding-right: 10px;
+}
+
+label > input[type="checkbox"] {
+  display: none;
+}
+label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.3rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #6C6C6C;
+  color: #E6E6E6;
+}
+label > input[type="checkbox"]:checked + * {
+  color: #937782;
+}
+label > input[type="checkbox"]:checked + *::before {
+  background-image: url("../imgs/check.png");
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #EB9385;
+  border-color: #937782;
+}
+
+/* DROPDOWNS  */
+
+fieldset#fieldBox{
+  border: white;
+}
+
+div#allDDs{
+  display: flex;
+  flex-direction: column;
+}
+
+div#lineOneDD{
+  display: flex;
+  flex-direction: row;
+}
+
+select#ghostone{
+  width: 25rem;
+  height: 6rem;
+  appearance: none;
+  font-size: 3rem;
+  border: 3px solid #D1D1D1;
+  border-radius: 10px;
+  padding: 0rem;
+  color: #D1D1D1;
+  margin-right: 80px;
+  padding-left: 10px;
+}
+
+select#ghosttwo{
+  width: 20rem;
+  height: 4rem;
+  appearance: none;
+  font-size: 2rem;
+  border: 3px solid #D1D1D1;
+  border-radius: 10px;
+  padding: 0rem;
+  color: #707070;
+  padding-left: 10px;
+}
+
+select#defaultone{
+  width: 25rem;
+  height: 6rem;
+  appearance: none;
+  font-size: 3rem;
+  border: 3px solid #707070;
+  border-radius: 10px;
+  padding: 0rem;
+  color: #707070;
+  padding-left: 10px;
+}
+
+/* INPUT BOXES */
+
+textarea#defaulttext{
+  width: 65vw;
+  height: 30vh;
+  border: 3px solid #959AA7;
+  border-radius: 30px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #E6E6E6;
+  text-transform: capitalize;
+  padding: 1.2rem;
+}
+
+input#passTheWord{
+  width: 30vw;
+  height: 10vh;
+  border: 3px solid #959AA7;
+  border-radius: 15px;
+  margin-right: 20px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+input#passTheError{
+  width: 30vw;
+  height: 10vh;
+  border: 3px solid #C34D4C;
+  color: #C34D4C;
+  border-radius: 15px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+:placeholder#passTheError{
+  color: #C34D4C;
+}
+
+input#searchWord{
+  width: 30vw;
+  height: 10vh;
+  border: 3px solid #A6C8DB;
+  color: #A6C8DB;
+  background-image: url("../imgs/search.png");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  background-size: 3rem;
+  border-radius: 15px;
+  margin-right: 20px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: right;
+}
+
+input#searchNoWord{
+  width: 30vw;
+  height: 10vh;
+  border: 3px solid #A6C8DB;
+  background-image: url("../imgs/search.png");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  background-size: 3rem;
+  color: #A6C8DB;
+  border-radius: 15px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: right;
+}
+
+input#enterNumber{
+  width: 30vw;
+  height: 10vh;
+  border: 3px solid #F4E596;
+  color: #F4E596;
+  border-radius: 15px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+
+div#secondBox{
+  display: flex;
+  flex-direction: row;
+}
+
+div#thirdBox{
+  display: flex;
+  flex-direction: row;
+}
+
+/* AVATARS */
+div#theAvatars{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+div#iconcircle1{
+  border-radius: 50%;
+  background-color: #E6E6E6;
+  width: 18vw;
+  height: 18vw;
+}
+div#iconcircle2{
+  border-radius: 50%;
+  background-color: #E6E6E6;
+  width: 18vw;
+  height: 18vw;
+}
+div#iconcircle3{
+  border-radius: 50%;
+  background-image:url("../imgs/avaimg.png");
+  background-position: center;
+  background-size: contain;
+  width: 18vw;
+  height: 18vw;
+}
+div#iconcircle4{
+  border-radius: 50%;
+  background-image:url("../imgs/avaimg.png");
+  background-position: center;
+  background-size: contain;
+  opacity: .5;
+  width: 18vw;
+  height: 18vw;
+}
+div.icon>img{
+  width: 60%;
+  opacity: 1;
+}
+div.icon2>img{
+  width: 40%;
+  opacity: 1;
+}
+
+div.icon{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.icon2{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#labeldrop{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size:1vw;
+}
+
+#labelbut{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size:1vw;
+}
+
+#labelinputs{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size:1vw;
+}
+
+#labelava{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size:1vw;
+}
+
+/* Style Sheet H1 */
+section.form h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9.5vw;
+  color: #BEBEBE;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+/* Headings for sections */
+section#btns>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 3.2vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+section#dropdowns>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 3.2vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+section#inputs>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 3.2vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+section#ava>h2{
+  font-family: 'Open Sans', sans-serif;
+  color: #BEBEBE;
+  font-size: 3.2vw;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
